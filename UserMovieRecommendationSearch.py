@@ -30,7 +30,7 @@ try:
         #shows results, and sorts values
         if selected_user_id:
             user_data = df[df['userId'] == selected_user_id]
-            user_data_sorted = user_data.sort_values(by='predicted_rating', ascending=False)
+            user_data_sorted = user_data.sort_values(by='Predicted Rating', ascending=False)
             
             
             st.write("### Recommendations for User ID:", selected_user_id)
