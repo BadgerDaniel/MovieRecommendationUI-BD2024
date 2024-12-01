@@ -11,11 +11,10 @@ def combine_pickles(output_prefix):
     print("DataFrames combined back into one DataFrame.")
     return combined_df
 
-FILE_NAME = 'TopMovieRecommendations_best.pkl'
+
 
 try:
-    with open(FILE_NAME, "rb") as file:
-        df = combine_pickles('data_split')
+    df = combine_pickles('data_split')
         
     # check that it is a dataframe
     if isinstance(df, pd.DataFrame):
